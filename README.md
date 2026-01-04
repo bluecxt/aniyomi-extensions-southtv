@@ -1,24 +1,46 @@
 <div align="center">
 
-| Install on Aniyomi | Install on Anikku | Build | Discord |
-|:------------------:|:-----------------:|:-----:|:-------:|
-| [![Install](https://img.shields.io/badge/Click%20here%20to%20install%20repo-gray?style=flat&labelColor=red)](https://intradeus.github.io/http-protocol-redirector/?r=aniyomi://add-repo?url=https://raw.githubusercontent.com/yuzono/anime-repo/repo/index.min.json) | [![Install](https://img.shields.io/badge/Click%20here%20to%20install%20repo-gray?style=flat&labelColor=red)](https://intradeus.github.io/http-protocol-redirector/?r=anikku://add-repo?url=https://raw.githubusercontent.com/yuzono/anime-repo/repo/index.min.json) | ![CI](https://github.com/yuzono/aniyomi-extensions/actions/workflows/build_push.yml/badge.svg) | [![Discord](https://img.shields.io/discord/1377136877491982366.svg?label=&labelColor=6A7EC2&color=7389D8&logo=discord&logoColor=FFFFFF)](https://discord.gg/85MZhUX688) |
+![Build APK](https://github.com/VOTRE_USERNAME/aniyomi-extensions/actions/workflows/build_apk.yml/badge.svg)
 
-[![Sponsor me on GitHub](https://custom-icon-badges.demolab.com/badge/-Sponsor-ea4aaa?style=for-the-badge&logo=heart&logoColor=white)](https://github.com/sponsors/cuong-tran "Sponsor me on GitHub")
-
-![Visitor Count](https://count.getloli.com/get/@yuzono?theme=capoo-2)
 </div>
 
-# ![app icon](./.github/readme-images/app-icon.png)Anikku/Aniyomi Extensions
-Anikku/Aniyomi is a free and open source manga reader for Android 6.0 and above.
+# ![app icon](./.github/readme-images/app-icon.png)Aniyomi Extensions - Fork avec SouthTV
 
-This repository contains the available extension catalogues for the [Anikku](https://github.com/komikku-app/anikku) or [Aniyomi](https://github.com/aniyomiorg/aniyomi) forks.
+Ce dépôt est un fork de [yuzono/aniyomi-extensions](https://github.com/yuzono/aniyomi-extensions) avec l'ajout de l'extension **SouthTV** pour accéder au contenu de [southtv.fr](https://southtv.fr).
 
-# Manual install
-just paste this into your anime repo
+## Extension SouthTV
+
+L'extension SouthTV permet de regarder du contenu vidéo depuis le site southtv.fr directement dans Aniyomi/Anikku.
+
+**Langue :** Français (🇫🇷)
+
+## À propos
+
+Anikku/Aniyomi est un lecteur de manga et anime gratuit et open source pour Android 6.0 et plus.
+
+Ce dépôt contient les extensions disponibles pour les forks [Anikku](https://github.com/komikku-app/anikku) ou [Aniyomi](https://github.com/aniyomiorg/aniyomi).
+
+## Installation
+
+### Téléchargement des APK
+
+Les fichiers APK compilés seront disponibles dans la section [Releases](https://github.com/VOTRE_USERNAME/aniyomi-extensions/releases) de ce dépôt après chaque build.
+
+Vous pouvez également compiler les extensions vous-même (voir la section Compilation ci-dessous).
+
+## Compilation
+
+Pour compiler l'extension SouthTV (ou toutes les extensions) :
+
+```bash
+# Compiler uniquement SouthTV
+./gradlew assembleRelease -Pextensions=fr:southtv
+
+# Compiler toutes les extensions
+./gradlew assembleRelease
 ```
-https://raw.githubusercontent.com/yuzono/anime-repo/repo/index.min.json
-```
+
+Les APK seront générés dans `src/[langue]/[extension]/build/outputs/apk/release/`
 
 # Usage
 
@@ -49,3 +71,8 @@ This project is not affiliated with Anikku or Aniyomi.
 Don't ask for help about these extensions at the official support means of Anikku or Aniyomi.
 
 All credits to the codebase goes to the original contributors.
+
+## Crédits
+
+- Projet original : [yuzono/aniyomi-extensions](https://github.com/yuzono/aniyomi-extensions)
+- Extension SouthTV : Ajoutée dans ce fork
